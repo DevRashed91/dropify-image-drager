@@ -1,0 +1,14 @@
+<div id="file-upload" class="section">
+<!--Default version-->
+<div class="row section">
+<div class="col s6 m5 l9">
+
+<input type="file" id="file" ref="file" v-on:change="handleFileUpload()" type="file" name="image" id="input-file-now" class="dropify" data-default-file="{{!empty($users) ? src($users->photo) : ''}}" />
+
+</div>
+</div>
+<!--Default value-->
+<div class="divider"></div>
+
+</div> <link rel="stylesheet" type="text/css" href="{{asset('admin/')}}/assets/styles/vendor/dropify/css/dropify.css">
+<script src="{{asset('admin/')}}/assets/js/vendor/dropify/js/dropify.min.js"></script>
